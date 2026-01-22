@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@import "./fonts.css";
+@import "./utils.css";
+@import "./theme.css";
+
+body {
+  @apply font-sans bg-background text-primary;
+}

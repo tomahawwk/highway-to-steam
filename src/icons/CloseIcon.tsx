@@ -1,0 +1,30 @@
+import React from "react";
+
+interface Props extends React.SVGAttributes<SVGElement> {
+  width?: number | string;
+  height?: number | string;
+  color?: string;
+}
+
+const CloseIcon = React.forwardRef<SVGSVGElement, Props>(
+  ({ width, height, color = "currentColor", ...other }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={height}
+      viewBox="0 0 12 12"
+      fill="none"
+      {...other}
+    >
+      <path
+        d="M7.41177 6L11.7071 1.70463C12.0976 1.31414 12.0976 0.683354 11.7071 0.292866C11.3166 -0.097622 10.6859 -0.097622 10.2954 0.292866L6 4.58824L1.70464 0.292866C1.31415 -0.097622 0.683355 -0.097622 0.292866 0.292866C-0.0976221 0.683354 -0.0976221 1.31414 0.292866 1.70463L4.58823 6L0.292866 10.2954C-0.0976221 10.6859 -0.0976221 11.3166 0.292866 11.7071C0.683355 12.0976 1.31415 12.0976 1.70464 11.7071L6 7.41176L10.2954 11.7071C10.6859 12.0976 11.3166 12.0976 11.7071 11.7071C12.0976 11.3166 12.0976 10.6859 11.7071 10.2954L7.41177 6Z"
+        fill="currentColor"
+      />
+    </svg>
+  )
+);
+
+CloseIcon.displayName = "CloseIcon";
+
+export default CloseIcon;
