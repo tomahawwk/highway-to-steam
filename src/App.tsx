@@ -11,7 +11,7 @@ const App = () => {
           HIGHWAY TO STEAM <span className="text-primary">2026</span>
         </div>
         <div className="text-gray-300">
-          Fund budget: <span className="text-white">100$</span>
+          Fund budget: <span className="text-white">120$</span>
         </div>
         <div className="flex flex-col gap-sm">
           <span className="text-white">Members:</span>
@@ -20,7 +20,8 @@ const App = () => {
             <li className="text-sm">aliery, </li>
             <li className="text-sm">augenblick, </li>
             <li className="text-sm">plpdt, </li>
-            <li className="text-sm">sollner</li>
+            <li className="text-sm">sollner, </li>
+            <li className="text-sm">uberhenrik</li>
           </ul>
         </div>
       </div>
